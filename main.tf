@@ -4,7 +4,7 @@ provider "aws" {
 
 module "lambda" {
   source  = "terraform-aws-modules/lambda/aws"
-  version = "~> 5.0"
+  version = "~> 5.3.0"
 
   function_name = "nba-stats-tracker"
   handler       = "handler.lambda_handler"

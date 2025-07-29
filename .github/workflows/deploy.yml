@@ -22,7 +22,7 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v2
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_IAMADMIN_GENERAL }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_IAMADMIN_GENERAL}}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_IAMADMIN_GENERAL }}
         aws-region: us-east-1
 
     - name: Terraform Init

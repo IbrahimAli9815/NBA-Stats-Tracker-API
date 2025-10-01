@@ -2,7 +2,7 @@ import json
 import requests
 
 def lambda_handler(event, context):
-    player_name = event.get("queryStringParameters", {}).get("player", "LeBron James")
+    player_name = event.get("queryStringParameters", {}).get("player", "Stephen Curry")
     
     # Get player ID
     player_url = f"https://www.balldontlie.io/api/v1/players?search={player_name}"

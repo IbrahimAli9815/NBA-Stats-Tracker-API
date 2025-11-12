@@ -1,10 +1,10 @@
 module "lambda" {
   source  = "terraform-aws-modules/lambda/aws"
-  version = "~> 5.3.0"                # keep your pinned version; upgrade later if you want
+  version = "~> 8.1.2" # keep your pinned version; upgrade later if you want
 
   function_name = "nba-stats-tracker"
   handler       = "handler.lambda_handler"
-  runtime       = "python3.12"        # ⬅️ recommended upgrade from python3.9
+  runtime       = "python3.12" # ⬅️ recommended upgrade from python3.9
   source_path   = "./lambda"
   publish       = true
 

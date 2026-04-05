@@ -1,6 +1,6 @@
 module "lambda" {
-  source  = "terraform-aws-modules/lambda/aws"
-  version = "~> 8.1.2" # keep your pinned version; upgrade later if you want
+  source  = "https://registry.terraform.io/providers/hashicorp/aws/latest"
+  version = "~> 6.39.0" # keep your pinned version; upgrade later if you want
 
   function_name = "nba-stats-tracker"
   handler       = "handler.lambda_handler"
